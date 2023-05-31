@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import styled from 'styled-components';
+import './App.css';
+import Header from './Components/Header';
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+
+  @media (min-width: 768px) {
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+`;
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Container>
+      <Header />
+      <p>Este es tu selector aleatorio de comida</p>
+      <form action="">
+        <input type="text" name="comida" id="comida" />
+        <input type="submit" value="Guardar Comida" />
+      </form>
+      <button>Comida Aleatoria</button>
+      <p>Su comida es:</p>
+      <p>Comida Aleatoria</p>
+    </Container>
+  );
 }
 
-export default App
+export default App;
+
