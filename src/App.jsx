@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import './App.css';
 import Header from './Components/Header';
+import Formulario from './Components/Formulario';
+import { useState } from 'react';
+
 
 const Container = styled.div`
   display: flex;
@@ -15,16 +18,20 @@ const Container = styled.div`
     text-align: left;
   }
 `;
+const FormularioContainer = styled.div`
+  margin-top: 20px;
+  margin-bottom: 20px;
+` 
 
 function App() {
+  const [comidas, setComidas] = useState([]);
+  console.log(comidas)
   return (
     <Container>
       <Header />
-      <p>Este es tu selector aleatorio de comida</p>
-      <form action="">
-        <input type="text" name="comida" id="comida" />
-        <input type="submit" value="Guardar Comida" />
-      </form>
+      <FormularioContainer>
+        <Formulario setComidas={setComidas}></Formulario>
+      </FormularioContainer>
       <button>Comida Aleatoria</button>
       <p>Su comida es:</p>
       <p>Comida Aleatoria</p>
