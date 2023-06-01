@@ -48,14 +48,14 @@ export default function ComidaAleatoria({ comidas }) {
     setConfetti(true);
     setTimeout(() => {
         setConfetti(false);
-        }, 6000);
+        }, 4800);
     };
 
   return (
     <Container>
         {confetti && (
             <Confetti
-            tweenDuration={5000}
+            tweenDuration={3000}
             drawShape={ctx => {
             ctx.beginPath()
             for(let i = 0; i < 22; i++) {
