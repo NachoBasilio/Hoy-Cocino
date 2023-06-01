@@ -4,6 +4,7 @@ import Confetti from './Confetti';
 
 const Container = styled.div`
   text-align: center;
+  margin-top: 30px;
 `;
 
 const clickAnimation = keyframes`
@@ -45,7 +46,7 @@ export default function ComidaAleatoria({ comidas }) {
   const handleClick = () => {
     const numeroRandom = Math.floor(Math.random() * comidas.length);
     setComidaAleatoria(comidas[numeroRandom]);
-    if(comidas[numeroRandom] === ''){
+    if(comidas[numeroRandom] === '' || comidas[numeroRandom] === undefined){
         return;
     }
     setConfetti(true);
@@ -74,7 +75,7 @@ export default function ComidaAleatoria({ comidas }) {
         )}
 
       <RandomButton onClick={handleClick}>¡Hoy se Cocina!</RandomButton>
-      <ResultText>{comidaAleatoria === '' ? 'Agrega las comidas que quieras' : comidaAleatoria}</ResultText>
+      <ResultText>{comidaAleatoria === '' ? 'Agrega las comidas que quieras y voy a tomar la decisión de que vas a comer por ti' : comidaAleatoria}</ResultText>
     </Container>
   );
 }
