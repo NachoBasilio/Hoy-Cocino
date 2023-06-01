@@ -20,7 +20,8 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+
+  padding: 23px;
   background-color: #ffffff;
 `;
 
@@ -72,7 +73,7 @@ export default function Formulario({ setComidas, comidas}) {
     <FormContainer>
       <DiagonalBorder />
       <StyledForm onSubmit={(e) => handleSubmit(e)}>
-        <StyledInput type="text" name="comida" id="comida" />
+        <StyledInput type="text" name="comida" id="comida" placeholder='Escribir...'/>
         <StyledSubmitButton type="submit" value="Guardar Comida" />
       </StyledForm>
     </FormContainer>
