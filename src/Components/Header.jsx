@@ -14,6 +14,7 @@ const FontImport = () => (
 const HeaderContainer = styled.div`
   position: relative;
   font-family: 'Quicksand', sans-serif;
+  padding: 5px;
 `;
 
 const DiagonalBorder = styled.div`

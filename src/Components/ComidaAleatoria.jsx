@@ -44,7 +44,7 @@ export default function ComidaAleatoria({comidas}) {
     }
     return (
         <Container>
-        <RandomButton onClick={()=>{handleClick()}}>Comida Aleatoria</RandomButton>
+        <RandomButton onClick={()=>{handleClick()}}>¡Hoy se Cocina!</RandomButton>
         <ResultText>Su comida es:</ResultText>
         <ResultText>{comidaAleatoria == "" ? "Comida Aleatoria" : comidaAleatoria}</ResultText>
         </Container>
