@@ -4,6 +4,8 @@ import styled, { keyframes } from 'styled-components';
 
 const FormContainer = styled.div`
   position: relative;
+  margin-top: 20px;
+  width: auto;
 `;
 
 const DiagonalBorder = styled.div`
@@ -15,6 +17,7 @@ const DiagonalBorder = styled.div`
   z-index: -1;
   background-color: #ffdd8c;
   transform: skewY(-5deg);
+  
 `;
 
 const StyledForm = styled.form`
@@ -27,10 +30,12 @@ const StyledForm = styled.form`
 `;
 
 const StyledInput = styled.input`
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  width: 300px;
+  height: 30px;
 `;
 
 

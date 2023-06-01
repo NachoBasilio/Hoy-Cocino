@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import './App.css';
 import Header from './Components/Header';
 import Formulario from './Components/Formulario';
 import ComidaAleatoria from './Components/ComidaAleatoria';
