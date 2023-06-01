@@ -20,7 +20,7 @@ const clickAnimation = keyframes`
 
 const RandomButton = styled.button`
   padding: 10px 20px;
-  background-color: #8ab382;
+  background-color: #c1d9cd;
   color: #000000;
   border: none;
   border-radius: 4px;
