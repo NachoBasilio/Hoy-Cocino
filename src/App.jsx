@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import './App.css';
 import Header from './Components/Header';
 import Formulario from './Components/Formulario';
-import { useState } from 'react';
+import ComidaAleatoria from './Components/ComidaAleatoria';
+import { useEffect, useState } from 'react';
+
 
 
 const Container = styled.div`
@@ -14,8 +16,8 @@ const Container = styled.div`
 
   @media (min-width: 768px) {
     justify-content: center;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
   }
 `;
 const FormularioContainer = styled.div`
@@ -24,17 +26,17 @@ const FormularioContainer = styled.div`
 ` 
 
 function App() {
-  const [comidas, setComidas] = useState([]);
-  console.log(comidas)
+  const [comidas , setComidas] = useState(localStorage.getItem('comida') === null ? [] : JSON.parse(localStorage.getItem('comida')));  
+  useEffect(() => {
+    localStorage.setItem('comida', JSON.stringify(comidas));
+  }, [comidas]);
   return (
     <Container>
       <Header />
       <FormularioContainer>
-        <Formulario setComidas={setComidas}></Formulario>
+        <Formulario setComidas={setComidas} comidas={comidas} ></Formulario>
       </FormularioContainer>
-      <button>Comida Aleatoria</button>
-      <p>Su comida es:</p>
-      <p>Comida Aleatoria</p>
+      <ComidaAleatoria comidas={comidas} ></ComidaAleatoria>
     </Container>
   );
 }
