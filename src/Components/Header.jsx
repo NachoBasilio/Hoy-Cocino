@@ -25,7 +25,7 @@ const DiagonalBorder = styled.div`
   bottom: 0;
   left: 0;
   z-index: -1;
-  background-color: #ffdd8c;
+  background-color: #f7b51c;
   transform: skewY(-5deg);
 `;
 
