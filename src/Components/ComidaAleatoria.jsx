@@ -45,6 +45,9 @@ export default function ComidaAleatoria({ comidas }) {
   const handleClick = () => {
     const numeroRandom = Math.floor(Math.random() * comidas.length);
     setComidaAleatoria(comidas[numeroRandom]);
+    if(comidaAleatoria === ''){
+        return;
+    }
     setConfetti(true);
     setTimeout(() => {
         setConfetti(false);
