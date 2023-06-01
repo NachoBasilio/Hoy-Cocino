@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
+
 const FormContainer = styled.div`
   position: relative;
 `;
@@ -20,7 +21,7 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  
   padding: 23px;
   background-color: #ffffff;
 `;
