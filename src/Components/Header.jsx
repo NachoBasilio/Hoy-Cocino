@@ -15,10 +15,7 @@ const HeaderContainer = styled.div`
   position: relative;
   font-family: 'Quicksand', sans-serif;
   padding: 5px;
-  width: 100%;
-  @media (min-width: 768px) {
-    width: 50%;
-  }
+
 `;
 
 const DiagonalBorder = styled.div`
