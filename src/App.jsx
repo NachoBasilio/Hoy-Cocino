@@ -29,11 +29,18 @@ function App() {
   useEffect(() => {
     localStorage.setItem('comida', JSON.stringify(comidas));
   }, [comidas]);
+
+  const eliminarComida = (index) => {
+    const nuevasComidas = [...comidas];
+    nuevasComidas.splice(index, 1);
+    setComidas(nuevasComidas);
+  }
+
   return (
     <Container>
       <Header />
       <FormularioContainer>
-        <Formulario setComidas={setComidas} comidas={comidas} ></Formulario>
+        <Formulario setComidas={setComidas} comidas={comidas} eliminarComida={eliminarComida} ></Formulario>
       </FormularioContainer>
       <ComidaAleatoria comidas={comidas} ></ComidaAleatoria>
     </Container>

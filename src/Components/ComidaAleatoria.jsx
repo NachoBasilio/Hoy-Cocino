@@ -75,7 +75,7 @@ export default function ComidaAleatoria({ comidas }) {
         )}
 
       <RandomButton onClick={handleClick}>¡Hoy se Cocina!</RandomButton>
-      <ResultText>{comidaAleatoria === '' ? 'Agrega las comidas que quieras y voy a tomar la decisión de que vas a comer por ti' : comidaAleatoria}</ResultText>
+      <ResultText>{comidaAleatoria === '' ? 'Agrega las comidas que quieras y voy a ayudarte a tomar la decision de que comeras hoy. Ya que HOY TOCA:' : comidaAleatoria}</ResultText>
     </Container>
   );
 }
