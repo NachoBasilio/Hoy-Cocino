@@ -50,7 +50,7 @@ const clickAnimation = keyframes`
 
 const StyledSubmitButton = styled.input`
   padding: 10px 20px;
-  background-color: #f98f6f;
+  background-color: #f7b51c;
   color: #000000;
   border: none;
   border-radius: 4px;
@@ -64,7 +64,7 @@ const StyledSubmitButton = styled.input`
 const BotonList = styled.button`
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #f98f6f;
+  background-color: #f7b51c;
   color: #000000;
   border: none;
   border-radius: 4px;
