@@ -23,12 +23,12 @@ Puedes probar la aplicación en línea visitando [este enlace](https://hoy-cocin
 
 <img src="https://i.ibb.co/fCF1cHH/Captura-desde-2023-06-03-21-22-11.png"/>
 
-_Ingresa tus comidas favoritas._
+<h3>Ingresa tus comidas favoritas.</h3>
 
 <img src="https://i.ibb.co/NNwrDGB/Captura-desde-2023-06-03-21-22-21.png"/>
 
-_Mira la lista de comidas ingresadas._
+<h3>_Mira la lista de comidas ingresadas.</h3>
 
 <img src="https://i.ibb.co/5rJKJcs/Captura-desde-2023-06-03-21-22-27.png"/>
 
-_¡¡Mira los confettis!!._
+<h3>_¡¡Mira los confettis!!.</h3>
