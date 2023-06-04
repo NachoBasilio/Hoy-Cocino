@@ -21,11 +21,11 @@ Puedes probar la aplicación en línea visitando [este enlace](https://hoy-cocin
 
 ## Capturas de pantalla
 
-<img src="https://ibb.co/tq1L1CY"/>
+<img src="https://i.ibb.co/fCF1cHH/Captura-desde-2023-06-03-21-22-11.png"/>
 _Ingresa tus comidas favoritas._
 
-<img src="https://ibb.co/2MXSVp4"/>
+<img src="https://i.ibb.co/NNwrDGB/Captura-desde-2023-06-03-21-22-21.png"/>
 _Mira la lista de comidas ingresadas._
 
-<img src="https://ibb.co/19QvSTT"/>
+<img src="https://i.ibb.co/5rJKJcs/Captura-desde-2023-06-03-21-22-27.png"/>
 _¡¡Mira los confettis!!._
